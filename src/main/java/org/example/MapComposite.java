@@ -5,14 +5,13 @@ import java.util.List;
 
 public class MapComposite extends BaseMapComponent {
 
-    private List<MapComponent> components; // Список вкладених компонентів
+    private List<MapComponent> components;
 
     public MapComposite(int x, int y, String name) {
         super(x, y, name);
         this.components = new ArrayList<>();
     }
 
-    // Додавання компоненту до складеного об'єкту
     public void addComponent(MapComponent component) {
         components.add(component);
     }
